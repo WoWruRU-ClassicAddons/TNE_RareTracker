@@ -1,4 +1,4 @@
-
+﻿
 
 TNE_RTMAP_MENU_ITEMS = { }
 
@@ -29,7 +29,29 @@ TNE_RTMAP_MAPADDON_DATA = {
   },
 }
 
-if (GetLocale() == "deDE") then
+if (GetLocale() == "ruRU") then
+TNE_RTMAP_MAPADDON_DATA = {
+  ["CT_MapMod_AddNote"] = { -- function name for which, when it exists, the following menu items are added
+    {
+      "Create notes using CT MapMod", -- item text
+      "CT MapMod Integration", -- tooltip header
+      "RareTracker может сохранять запись месторасположения редкого существа на карте мира. включить для создания заметок с CT Map Mod.", -- tooltip text
+      function() TNE_RareTrackerMap_SaveNotes_CT = not TNE_RareTrackerMap_SaveNotes_CT end, -- onclick function
+      "TNE_RareTrackerMap_SaveNotes_CT", -- checked variable
+    },
+  },
+  ["MapNotes_GetNoteBySlashCommand"] = {
+    {
+      "Create notes using MapNotes",
+      "MapNotes Integration",
+      "RareTracker может сохранять запись месторасположения редкого существа на карте мира. Включить для создания заметок с MapNotes.",
+      function() TNE_RareTrackerMap_SaveNotes_MapNotes = not TNE_RareTrackerMap_SaveNotes_MapNotes end,
+      "TNE_RareTrackerMap_SaveNotes_MapNotes",
+    },
+  },
+}
+
+elseif (GetLocale() == "deDE") then
 
 elseif (GetLocale() == "frFR") then
 

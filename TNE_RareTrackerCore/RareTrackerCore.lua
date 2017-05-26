@@ -15,8 +15,8 @@
       "UPDATE_MOUSEOVER_UNIT",
     },
     help = {
-      ["scan"] = "$v/raretracker scan$ev: Search your surroundings for rare spawns (you cannot find new rares this way).",
-      ["autotarget"] = "$v/raretracker autotarget$ev <$von$ev | $voff$ev>: You can allow RareTracker to target mobs.",
+      ["scan"] = scan,
+      ["autotarget"] = autotarget,
       --["about"] = "$v/raretracker about$ev: Displays infomation about this addon.",
     },
   }
@@ -45,7 +45,7 @@
 
     RareTracker:ZoneFix()
 
-    TNEUtils.CombatEcho(RareTracker.name.. ": Database loaded.")
+    TNEUtils.CombatEcho(RareTracker.name.. ": База данных загружена.")
     TNEUtils.RegisterEvents(RareTracker.frame, RareTracker.events)
 
   end

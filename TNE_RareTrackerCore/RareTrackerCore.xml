@@ -3,6 +3,7 @@
 
   <Script file="TNEUtils.lua" />
   <Script file="RareTrackerDatabase.lua" />
+  <Script file="RareTrackerDatabase_Rus.lua" />
   <Script file="RareTrackerDatabase_deDE.lua" />
   <Script file="RareTrackerDatabase_frFR.lua" />
   <Script file="localization.lua" />

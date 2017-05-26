@@ -1,4 +1,4 @@
-
+﻿
   RareTrackerStandard = {
     version = "1.5.3",
     supportedbuild = "11000",
@@ -14,7 +14,7 @@
       "ZONE_CHANGED",
     },
     help = {
-      ["about"] = "$v/fs about$ev: Displays infomation about this addon.",
+      ["about"] = "$v/fs about$ev: Отображает информацию об аддоне",
     },
   }
 
@@ -84,7 +84,7 @@
 
       end
 
-      local info = { func = function() RareTrackerFrameMenu:Hide() end, text = "Hide menu", tooltipTitle = "Hide menu", tooltipText = "Hides this menu. Changes will be saved regardless of how you close the menu." }
+      local info = { func = function() RareTrackerFrameMenu:Hide() end, text = "Скрыть меню", tooltipTitle = "Скрыть меню", tooltipText = "Скрывает данное меню. Все изменения будут автоматически сохранены после закрытия меню." }
       UIDropDownMenu_AddButton(info)
 
     end

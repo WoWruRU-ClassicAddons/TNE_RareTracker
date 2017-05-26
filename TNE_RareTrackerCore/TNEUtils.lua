@@ -1,4 +1,4 @@
-
+﻿
 TNE_UTILS_VERSION = 9
 
 local RGBColors = {
@@ -202,19 +202,19 @@ function TNE_Local_Help(addon, topic)
 
   if (addon and addon.help) then
     if (topic == "onload") then
-      local msg = "%s: $v%s$ev loaded. Use $v%s$ev for quick help."
+      local msg = "%s: $v%s$ev загружен. Используйте $v%s$ev для быстрой помощи."
       TNE_Local_Echo(format(msg, addon.name, addon.version, addon.cmd))
       return true
     elseif (topic == "list") then
       local msg = "%s: %s"
-      TNE_Local_Echo(format(msg, addon.name, "List of commands:"))
+      TNE_Local_Echo(format(msg, addon.name, "Список комманд:"))
       table.foreach(addon.help, function(key, value) TNE_Local_Echo(value) end)
       return true
     elseif (addon.help[topic]) then
       TNE_Local_PrefixedEcho(addon.name, addon.help[topic])
       return true
     else
-      TNE_Local_PrefixedEcho(addon.name, "Help not available for $v".. topic.. "$ev.")
+      TNE_Local_PrefixedEcho(addon.name, "Помощь не доступна для $v".. topic.. "$ev.")
       return false
     end
   end

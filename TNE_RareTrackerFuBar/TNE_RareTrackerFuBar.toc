@@ -1,6 +1,7 @@
-## Interface: 11000
+﻿## Interface: 11000
 ## Title: FuBar - |cffffffffRareTracker|r|cff00ff00Fu|r
 ## Notes: FuBar plugin for RareTracker.
+## Notes-ruRU: RareTracker плагин для FuBar.
 ## Author: Silent
 ## eMail: silentaddons@gmail.com
 ## Dependencies: TNE_RareTrackerCore, Ace, FuBar

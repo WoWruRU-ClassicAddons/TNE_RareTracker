@@ -12,7 +12,7 @@
       "VARIABLES_LOADED",
     },
     help = {
-      ["about"] = "$v/fs about$ev: Displays infomation about this addon.",
+      ["about"] = "$v/fs about$ev: Отображает информацию об аддоне",
     },
   }
 

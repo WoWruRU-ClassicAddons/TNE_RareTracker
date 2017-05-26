@@ -2,6 +2,7 @@
 ## Title: RareTracker Core
 ## Author: Silent
 ## Notes: Keeps track of rare spawns and notifies you as you get near one.
+## Notes-ruRU: Отслеживает редких существ и уведомляет вас, когда существо находится рядом с вами.
 ## SavedVariables: RT_Database
 ## SavedVariablesPerCharacter: TNE_RareTrackerCore_AutoTarget
 ## Dependencies: 

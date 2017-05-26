@@ -1,4 +1,4 @@
-
+﻿
 TNE_RTFUBAR_MENU_ITEMS = { }
 
 if not ace:LoadTranslation("RareTrackerFu") then
@@ -28,4 +28,31 @@ if not ace:LoadTranslation("RareTrackerFu") then
     TOOLTIP_COORDS = "%s" --"%s",
   }
 
+-- Version : Russian ( by Maus )
+if GetLocale() == "ruRU" then
+  RareTrackerFuLocals = {
+    DESCRIPTION = "RareTracker плагин для FuBar",
+    COMMANDS = {},
+    CMD_OPTIONS = {},
+  
+    DISPLAY_ZONE = "RareTracker: %d",
+    DISPLAY_SUBZONE = "RareTracker: %d (%d)",
+  
+    MENU_SCAN = "Сканировать ближайших существ",
+    MENU_AUTOTARGET = "Разрешить автоматически брать в цель",
+    MENU_TOOLTIP_LOCATION = "Использовать стандартное расположение подсказок",
+    MENU_SORT_BY_SUBZONE = "Сортировать подсказки по подзоне",
+
+    TOOLTIP_HINT = "Нажмите ЛКМ  для сканирования окружающих существ",
+
+    TOOLTIP_NO_KNOWN_MOBS = "Нет известных редких существ в \"%s\".",
+    TOOLTIP_MOBS_KNOWN_IN_ZONE = "%d известных редких существ в локации \"%s\":",
+    TOOLTIP_MOBS_KNOWN_IN_SUB_ZONE = "%d рядом или вблизи \"%s\":",
+    TOOLTIP_MOBS_KNOWN_IN_SUB_ZONE_ONLY = "%s:",
+    TOOLTIP_MOBS_KNOWN_IN_UNKNOWN = "Нет подзоны/никогда не встречались:",
+    TOOLTIP_SEEN_AT = "Координаты:",
+    TOOLTIP_MOB = " - %s, %s",
+    TOOLTIP_COORDS = "%s" --"%s",
+  }
+end
 end

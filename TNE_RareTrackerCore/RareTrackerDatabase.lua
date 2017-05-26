@@ -1,4 +1,4 @@
-
+﻿
 -- DEFAULT ENGLISH DATABASE
 
 -- all rare spawns currently known by http://wow.allakhazam.com/dyn/mobs/rare.html
